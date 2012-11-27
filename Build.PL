@@ -7,7 +7,7 @@ my $build = Module::Build->new(
     version_from => "AnyEvent::Memcached::Hash::Consistent",
     requires    => {
         "AnyEvent::Memcached" => 0,
-        "Set::Consistent"     => 0,
+        "Set::ConsistentHash"     => 0,
     },
 );
 
