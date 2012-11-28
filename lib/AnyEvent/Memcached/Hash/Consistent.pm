@@ -1,4 +1,5 @@
 package AnyEvent::Memcached::Hash::Consistent;
+our @ISA = 'AnyEvent::Memcached::Hash';
 
 =head1 NAME
 
