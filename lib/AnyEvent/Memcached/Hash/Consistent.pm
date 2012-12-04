@@ -47,6 +47,8 @@ sub new {
     my $peers = $self->{buckets}->peers;
 
     $hash->targets( map +($_ => 1), keys %$peers );
+    
+    return $self;
 }
 
 =back
