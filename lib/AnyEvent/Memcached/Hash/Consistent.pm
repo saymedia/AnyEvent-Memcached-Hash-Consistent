@@ -46,7 +46,7 @@ sub new {
     # Ignore the bucketer....just use it for a set of peers.
     my $peers = $self->{buckets}->peers;
 
-    $hash->targets( map +($_ => 1), keys %$peers );
+    $hash->set_targets( map +($_ => 1), keys %$peers );
     
     return $self;
 }
